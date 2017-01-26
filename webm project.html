@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>~~</title>
+		<div id="wat">
+			~ohayo~
+		</div>
+	</head>
+	<body>
+		<div style="text-align:center"> 
+  		<button onclick="playPause()">~play.resume~</button> 
+  		<video id="1" width="560">
+    	<source src="webms/1.webm" type="webm">
+ 	</video>
+
+ 	 <script> 
+		var myVideo = document.getElementById("1"); 
+
+			function playPause() { 
+    		if (myVideo.paused) 
+       		myVideo.play(); 
+    			else 
+        	myVideo.pause(); 
+		} 
+	</script> 
+
+
+</div> 
+	<style type="text/css">
+		html, body{
+			background-color: #C5BFE3;
+			font-family: Terminal;
+   			font-size: 13px;
+		}
+
+		#wat { 
+  			margin: auto 0;
+  			text-align: center;  
+  			padding: 3px;
+  			font-weight: 100;
+  			cursor: default;
+   			position: absolute;
+   			top: 13%;
+  			left: -10px;
+  			width: 100%;
+		}
+	</style>
+	</body>
+
+</html>
+
+
