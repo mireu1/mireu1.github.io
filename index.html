@@ -1,84 +1,95 @@
-
 <!DOCTYPE html>
+<html>
+<head>
+
 	<style>
-   		body {
-        background: white;
-		overflow: hidden;
-		}
-		
-		a {
-		color: black;
-		}
-		
-   		section {
-        	position: fixed;
-        	top: 50%;
-        	left: 50%;
-        	margin-right: -50%;
-        	transform: translate(-50%, -50%) }
+	       body {
+	       background: white;
+	       overflow: hidden;
+	       cursor: default;
+	       }
+	       
+	       a {
+	       color: black;
+	       cursor: pointer;
+	       }
+	       
+	       section {
+	       position: fixed;
+	       top: 50%;
+	       left: 50%;
+	       margin-right: -50%;
+	       transform: translate(-50%, -50%) 
+	   	   }
 	</style>
-
 	<title>mireu</title>
-		<div style="visibility:hidden">
-    	<audio autoplay loop>
-        <source src="Azaleh - Endeavour.mp3">
-    	</audio> 
-		</div>
-  		<section>
-  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-			<div align="center">
-			<font face="courier">
-			<u><em><strong>mireu's personal website</strong></em></u></p>
+</head>
+<body>
+	<div style="visibility:hidden">
+		<audio autoplay="" loop=""><source src="Azaleh%20-%20Endeavour.mp3"></audio>
+	</div>
+	<section>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<div align="center">
+			<font face="courier"><u><em><strong>mireu's personal website</strong></em></u><br>
 			<br>
-			<a href="https://soundcloud.com/mireu1/">soundcloud</a> | <a href="https://steamcommunity.com/id/xdmireu">steam</a> | <a href="https://euw.op.gg/summoner/userName=tied+to+a+star">op.gg</a> | <a href="https://www.youtube.com/watch?v=88XaeRjv8hc&list=PLDdrJyG1IpA2Cm19yi3Jzn9j4QcSpVyOb">playlist</a></p>
 			<br>
-			68.9585° N, 33.0827° E</p>
+			<a href="https://soundcloud.com/mireu1/">soundcloud</a> | <a href="https://steamcommunity.com/id/xdmireu">steam</a> | <a href="https://euw.op.gg/summoner/userName=tied+to+a+star">op.gg</a> | <a href="https://www.youtube.com/watch?v=88XaeRjv8hc&list=PLDdrJyG1IpA2Cm19yi3Jzn9j4QcSpVyOb">playlist</a><br>
 			<br>
-				[ ]</p>	
 			<br>
-			<em>
-				~</p>
-				<br>
-				потеряли в мире, который не существует</p>
-				<br>
-				plus three eight one six zero six six two nine one four eight
-			</em>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
-				<script>
-					var camera, scene, renderer;
-					var geometry, material, mesh;
+			68.9585° N, 33.0827° E<br>
+			<br>
+			<br>
+			[ ]<br>
+			<br>
+			<br>
+			<em>~<br>
+			<br>
+			<br>
+			потеряли в мире, который не существует<br>
+			<br>
+			<br>
+			plus three eight one six zero six six two nine one four eight</em> 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js">
+			</script> 
+			<script>
 
-					function init() {
 
-						renderer = new THREE.CanvasRenderer();
-						renderer.setSize( window.innerWidth, window.innerHeight );
-						document.body.appendChild( renderer.domElement );
+			                 var camera, scene, renderer;
+			                 var geometry, material, mesh;
 
-						camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
-						camera.position.z = 3;
+			                 function init() {
 
-						scene = new THREE.Scene();
+			                     renderer = new THREE.CanvasRenderer();
+			                     renderer.setSize( window.innerWidth, window.innerHeight );
+			                     document.body.appendChild( renderer.domElement );
 
-						geometry = new THREE.CubeGeometry( 1, 1, 1 );
-						material = new THREE.MeshBasicMaterial( { color: 0xbababa, wireframe: true, wireframeLinewidth: 1 } );
+			                     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
+			                     camera.position.z = 3;
 
-						mesh = new THREE.Mesh( geometry, material );
-						scene.add( mesh );
-					}
+			                     scene = new THREE.Scene();
 
-					function animate() {
+			                     geometry = new THREE.CubeGeometry( 1, 1, 1 );
+			                     material = new THREE.MeshBasicMaterial( { color: 0xbababa, wireframe: true, wireframeLinewidth: 1 } );
 
-						requestAnimationFrame( animate );
+			                     mesh = new THREE.Mesh( geometry, material );
+			                     scene.add( mesh );
+			                 }
 
-						mesh.rotation.x = Date.now() * 0.0005;
-						mesh.rotation.y = Date.now() * 0.0005;
+			                 function animate() {
 
-						renderer.render( scene, camera );
-					}
+			                     requestAnimationFrame( animate );
 
-					init();
-					animate();
-			</script>
-		</div>
-	</font>
-</section>
+			                     mesh.rotation.x = Date.now() * 0.0005;
+			                     mesh.rotation.y = Date.now() * 0.0005;
+
+			                     renderer.render( scene, camera );
+			                 }
+
+			                 init();
+			                 animate();
+			</script></font>
+		</div><font face="courier"></font>
+	</section>
+</body>
+</html>
